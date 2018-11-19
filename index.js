@@ -1,7 +1,8 @@
 var recipes = {}
 
 function updateObjectWithKeyAndValue(object, key, value) {
-  cloneObject = Object.assign({}, object, key, value)
+  cloneObject = {}
+  Object.assign(cloneObject, object, key, value)
   return cloneObject
 }
 
